@@ -2,9 +2,10 @@ import React from 'react';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
 import AddUser from './AddUser';
+import FilterUsers from './FilterUsers';
 
 
-const Table = ({users,removeCharacter,userInput,setUserInput,setUsers,userJob,setUserJob}) => {
+const Table = ({users,removeCharacter,userInput,setUserInput,setUsers,userJob,setUserJob,filterInput,setFilterInput}) => {
     return (
         <div>
             <TableHeader />
@@ -17,6 +18,12 @@ const Table = ({users,removeCharacter,userInput,setUserInput,setUsers,userJob,se
                 userJob={userJob}
                 setUserJob={setUserJob}
             />
+            <FilterUsers 
+                users={users}
+                setUsers={setUsers}
+                filterInput={filterInput}
+                setFilterInput={setFilterInput}
+             />
         </div>
     );
 };

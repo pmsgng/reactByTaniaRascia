@@ -30,6 +30,7 @@ function App() {
 
   const [userInput, setUserInput] = useState('')
   const [userJob, setUserJob] = useState('')
+  const [filterInput,setFilterInput] = useState('')
 
    const removeCharacter = (id) => {
       setUsers([...users.filter((item) => {
@@ -47,6 +48,8 @@ function App() {
         users={users} 
         setUsers={setUsers}
         removeCharacter={removeCharacter} 
+        filterInput={filterInput}
+        setFilterInput={setFilterInput}
       />
     </div>
   );
