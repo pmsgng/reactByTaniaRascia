@@ -1,14 +1,16 @@
 import React from 'react';
 import TableHeader from './TableHeader';
 import TableBody from './TableBody';
+import AddUser from './AddUser';
 
 
-const Table = ({characterData}) => {
+const Table = ({users,removeCharacter}) => {
     return (
-        <table>
+        <div>
             <TableHeader />
-            <TableBody characterData={characterData} />
-        </table>
+            <TableBody users={users} removeCharacter={removeCharacter}/>
+            <AddUser />
+        </div>
     );
 };
 

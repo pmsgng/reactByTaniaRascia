@@ -1,18 +1,19 @@
 import React from 'react';
 
-const TableBody = ({ characterData }) => {
-    const rows = characterData.map((row, index) => {
+const TableBody = ({ users,removeCharacter}) => {
+    const rows = users.map(user => {
         return (
-            <tr key={index}>
-                <td>{row.name}</td>
-                <td>{row.job}</td>
-            </tr>
+            <div key={user.id} className='user'>
+                <div  className='user-name'>{user.name}</div>
+                <div className='user-job'>{user.job}</div>
+                <button className='user-delete' onClick={()=> removeCharacter(user.id)}> Delete</button>
+            </div>
         )
     })
     return (
-        <tbody>
+        <div>
             {rows}
-        </tbody>
+        </div>
     );
 };
 

@@ -1,1 +1,44 @@
 
+.user {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: .5rem;
+    padding: .2rem;
+}
+.user-name {
+    margin-right: 1rem;
+    width: 5rem;
+}
+.user-job {
+    margin-right: 1rem;
+    width: 5rem;
+}
+
+
+.header {
+    display: flex;
+    border-bottom: 1px solid gray;
+
+    margin-bottom: .5rem;
+}
+.header-name {
+    margin-right: 1rem;
+    width: 5rem;
+}
+
+.user-delete {
+    display: flex;
+    align-items: center;
+    height: 1rem;
+}
+
+.user-form {
+    display: flex;
+}
+.user-input {
+    margin-right: 2rem;
+}
+.add-user-btn {
+
+}
